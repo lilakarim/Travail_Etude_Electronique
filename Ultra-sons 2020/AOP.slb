@@ -1,0 +1,33 @@
+*version 9.1 205975749
+@index
+symloc AOP 0 621
+*symbol AOP
+d 
+@type p 9.1
+@attributes
+a 1 sp 9 0 0 0 hln 100 REFDES=AOP
+a 0 sp 11 0 0 40 hln 100 PART=
+a 0 sp 0 0 0 0 hln 100 MODEL=AOP
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %1 %2 %3 @model
+@views
+a 0 u 13 0 0 0 hln 100 DEFAULT=aop.sch
+@pins
+p 2 12 12 hln 100 1 n 0 10 h
+a 0 s 0:13 0 0 10 hln 100 ERC=i
+a 0 s 0:1 0 3 8 hln 100 PIN=1
+p 2 12 32 hln 100 2 n 0 30 h
+a 0 s 0:13 0 0 30 hln 100 ERC=i
+a 0 s 0:1 0 3 28 hln 100 PIN=2
+p 2 46 16 hrn 100 3 n 50 20 u
+a 0 s 0:13 0 50 20 hln 100 ERC=o
+a 0 s 0:1 0 43 18 hln 100 PIN=3
+@graphics 50 40 0 10 10
+v 0 10 40
+10 0
+40 20
+10 40
+;
+z 26 4 6 hln 100 1
+-
+z 26 4 26 hln 100 1
++

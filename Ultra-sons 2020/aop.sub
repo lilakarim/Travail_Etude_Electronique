@@ -1,0 +1,10 @@
+* Schematics Subcircuit *
+
+.SUBCKT aop 1 2 3 
+
+E_DIFF1         $N_0001 0 VALUE {V(2,1)}
+R_RS         0 3  10k  
+E_GLIMIT2         3 0 VALUE {LIMIT(V($N_0001)*100k,0,4.2V)}
+
+.ENDS    aop
+
